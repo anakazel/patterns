@@ -1,4 +1,4 @@
-package facade;
+package com.patterns.facade;
 
 /**
  * Created by alexg on 1/25/14.

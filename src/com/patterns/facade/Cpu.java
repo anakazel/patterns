@@ -1,9 +1,9 @@
-package facade;
+package com.patterns.facade;
 
 /**
- * Created by alexg on 1/25/14.
+ * Created by alexg on 11.06.2015.
  */
-public class CPU {
+public class Cpu {
     public void freeze() {
         System.out.println("CPU: freeze()");
     }

@@ -1,16 +1,15 @@
-package facade;
+package com.patterns.facade;
 
 /**
- * Created by alexg on 1/25/14.
+ * Created by alexg on 11.06.2015.
  */
 public class ComputerFacade {
-
-    private CPU processor;
+    private Cpu processor;
     private Memory ram;
     private HardDrive hdd;
 
     public ComputerFacade(){
-        processor = new CPU();
+        processor = new Cpu();
         ram = new Memory();
         hdd = new HardDrive();
     }
@@ -20,5 +19,6 @@ public class ComputerFacade {
         ram.load(0, null);
         processor.jump(0);
         processor.execute();
+        hdd.read(0, 0);
     }
 }
